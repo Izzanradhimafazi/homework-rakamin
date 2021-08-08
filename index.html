@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head >
+    <title>Anime | TENSEI SHITARA SLIME DATTA KEN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" size="16x16" href="src/img/flag.png">
+</head>
+<body>
+    <div class="bg"></div>
+    <header>
+        <nav>
+            <img src="src/img/logo.png" alt="Logo">
+            
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="#About"><li>About</li></a>
+                <a href="#Login"><li><input type="submit" value="Login"><span>
+                  <img src="src/img/0.png" class="submit" alt="Dark" style="width:37px;" onclick="myFunction()"></span>
+                  </li></a>
+            </ul>
+        </nav>
+    </header>
+    <section id="home"> 
+        <div class="text">
+            <h1>Rimuru Tempest</h1>
+            <p>Rimuru Tempest (リムル゠テンペスト Rimuru Tenpesuto), formerly known as Satoru Mikami, is the main protagonist of That Time I Got Reincarnated as a Slime.
+             <form action="">
+                <input type="submit" value="More About">
+            </form></p>
+        </div>
+        <div class="photo">
+            <img src="src/img/Profil.png" alt="Photo Profile">
+        </div>
+        <div class="media-social">
+            
+            <div class="skill">
+                <h1>Introduction</h1>
+                <p>Partner and best friend of the True Dragon Veldora Tempest, Rimuru is the founder and King of the Jura Tempest Federation in Jura Forest. He is one of the Demon Lords of the Octagram. He lives in Rimuru City, the Capital city of the Jura Tempest Federation</p>
+
+                <div class="abilities">
+                  <h2>Gallery</h2>
+                    <div class="pertama">
+                      
+                        <a href="#"><p></p></a>
+                        <img id="myImg" src="src/img/1.jpg" alt="Jura Tempest Federation" style="width:100%">
+
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                      </div>
+                    </div>
+                    <div class="kedua">
+                        <img id="myImg" src="src/img/2.jpg" alt="Kingdom of Ingraccia" style="width:100%">
+
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                      </div>
+                    </div>
+                    <div class="ketiga">
+                        <img id="myImg" src="src/img/3.jpg" alt="Kijin / Oni" style="width:100%">
+
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                      </div>
+                    </div>
+                    <div class="keempat">
+                        <img id="myImg" src="src/img/4.jpg" alt="Demon Lords" style="width:100%">
+
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                        <div id="caption"></div>
+                      </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; Copyright 2021 | Anime, Rimuru Tempest</a>.</p>
+    </footer>
+    <div class="bg2"></div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+        modal.style.display = "none";
+      }
+      function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+      </script>
+
+</body>
+</html>
